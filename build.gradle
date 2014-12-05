@@ -43,5 +43,5 @@ task wrapper(type: Wrapper) {
 
 task generateJavadoc(type: Javadoc){
 	source = sourceSets.main.allJava
-	destinationDir = reporting.file("commonutil")
+	destinationDir = reporting.file("dataobserver")
 }
