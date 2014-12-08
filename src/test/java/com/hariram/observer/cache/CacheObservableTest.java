@@ -3,6 +3,12 @@ package com.hariram.observer.cache;
 import static org.junit.Assert.*;
 
 import java.lang.reflect.Field;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 import org.junit.Test;
 
@@ -19,7 +25,7 @@ public class CacheObservableTest {
 		System.out.println(CacheManager.getFromCache("d1"));
 		sample.setData("c2");
 		System.out.println(CacheManager.getFromCache("d1"));
-		try {
+/*		try {
 			Field field = sample.getClass().getDeclaredField("data");
 			field.setAccessible(true);
 			System.out.println(field.get(sample));
@@ -27,7 +33,7 @@ public class CacheObservableTest {
 		} catch (NoSuchFieldException | SecurityException | IllegalArgumentException | IllegalAccessException e) {
 			e.printStackTrace();
 		}
-		assertTrue(true);
+*/		assertTrue(true);
 	}
 
 }
