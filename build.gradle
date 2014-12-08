@@ -33,7 +33,7 @@ repositories {
 
 dependencies {
     compile("log4j:log4j:1.2.17")
-    compile("com.hariram:cacheannotation:0.2")
+    compile("com.hariram:cacheannotation:0.3")
     compile("junit:junit:4.4")
 }
 
