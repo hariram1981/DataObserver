@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.hariram.observer.cache;
 
 import java.util.Observable;
@@ -12,6 +9,8 @@ import com.hariram.annotation.AnnotationProcessor;
 import com.hariram.annotation.cache.CacheAnnotationProcessor;
 
 /**
+ * Cache observer class that observes variables annotated by @Cache
+ * 
  * @author hariram
  * date 05-Dec-2014
  */
@@ -21,17 +20,20 @@ public class CacheObserver implements Observer {
 	public static final Logger LOGGER = Logger.getLogger(CacheObserver.class);
 	
 	/**
+	 * Parameterized constructor
 	 * 
-	 * @param cacheObservable
+	 * @param cacheObservable object to be observed
 	 */
 	public CacheObserver(CacheObservable cacheObservable) {
 		this.cacheObservable = cacheObservable;
 	}
 	
-	/* (non-Javadoc)
-	 * @see java.util.Observer#update(java.util.Observable, java.lang.Object)
+	/**
+	 * Updates the cache when the observable is changed
+	 * 
+	 * @param o object that is observed
+	 * @param arg arguments for the object
 	 */
-	@Override
 	public void update(Observable o, Object arg) {
 		LOGGER.info("CacheObserver.update, observable: " + o + ", arg: " + arg);
 		if(o == cacheObservable) {
