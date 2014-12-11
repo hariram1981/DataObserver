@@ -1,0 +1,4 @@
+0.1 - Initial version
+    - added cache observer to observe changes of @Cache variables
+0.2 - Added logging
+0.3 - Added javadoc comments
